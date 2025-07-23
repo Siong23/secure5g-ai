@@ -28,30 +28,30 @@ As 5G technology rapidly evolves, its complex architecture and increased attack 
 
 ## 🖼️ System Architecture
 ```
-+-------------------------------------------------------------+
-| MMU 5G Testbed |
-| - gNB + Core (Open5GS/Amarisoft) |
-| - 5G UEs (phones, emulators, SDRs) |
-+---------------------------+---------------------------------+
-↓
-+------------------------------+
-| Traffic Capture & Labeling |
-| - Wireshark, tshark |
-| - TCPDump, sFlow exporters |
-+------------------------------+
-↓
-+----------------------------------------+
-| Dataset Preprocessing Pipeline |
-| - Parsing, Filtering, Normalizing |
-| - Attack Injection & Labeling Scripts |
-+-------------------+--------------------+
-↓
-+-------------------------------+
-| secure5g-dataset/ |
-| - Labeled flows |
-| - Metadata (labels, scenario) |
-| - Format: CSV, NetFlow, JSON |
-+-------------------------------+
+          +---------------------------------------+
+          | MMU 5G Testbed                        |
+          | - gNB + Core (Open5GS/Amarisoft)      |
+          | - 5G UEs (phones, emulators, SDRs)    |
+          +---------------------------------------+
+                            ↓
+             +------------------------------+
+             | Traffic Capture & Labeling   |
+             | - Wireshark, tshark          |
+             | - TCPDump, sFlow exporters   |
+             +------------------------------+
+                            ↓
+         +----------------------------------------+
+         | Dataset Preprocessing Pipeline         |
+         | - Parsing, Filtering, Normalizing      |
+         | - Attack Injection & Labeling Scripts  |
+         +-------------------+--------------------+
+                             ↓
+             +-------------------------------+
+             | secure5g-dataset/             |
+             | - Labeled flows               |
+             | - Metadata (labels, scenario) |
+             | - Format: CSV, NetFlow, JSON  |
+             +-------------------------------+
 ```
 
 
