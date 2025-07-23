@@ -28,15 +28,15 @@ As 5G technology rapidly evolves, its complex architecture and increased attack 
 
 ## 🖼️ System Architecture
 ```
-          +---------------------------------------+
-          | MMU 5G Testbed                        |
-          | - gNB + Core (Open5GS/Amarisoft)      |
-          | - 5G UEs (phones, emulators, SDRs)    |
-          +---------------------------------------+
+          +-------------------------------------+
+          | MMU 5G Testbed                      |
+          | - gNB + Core                        |
+          | - 5G UEs (phones, emulators, SDRs)  |
+          +-------------------------------------+
                             ↓
              +------------------------------+
              | Traffic Capture & Labeling   |
-             | - Wireshark, tshark          |
+             | - Wireshark                  |
              | - TCPDump, sFlow exporters   |
              +------------------------------+
                             ↓
@@ -77,7 +77,7 @@ secure5g-ai/
 
 ### Prerequisites
 
-- Access to 5G testbed (Open5GS, Amarisoft, or equivalent)
+- Access to 5G testbed 
 - Python ≥ 3.8
 - Wireshark / tshark / tcpdump
 - [Zeek](https://zeek.org/) or [nfdump](https://github.com/phaag/nfdump) (optional)
