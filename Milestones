@@ -1,16 +1,15 @@
-# Milestone of the project
----
+Milestone of the project
 
-## 1. Create and develop difference attack for 5G network 
+1. Create and develop difference attack for 5G network 
 
 - Attack likes fuzzing, dhcp starvation, mac flooding, arp spoofing...
-- Date to archieve: 8 August 2025 
+- Date to archieve: 11 August 2025 
 
-## 2. Stimulate attack and traffic capturing
+2. Stimulate attack and traffic capturing
 
 - Perform attacks to MMU’s live 5G setup 
-- Caputre network traffic using 
-- 
+- Caputre network traffic using Wireshark
+- Date to archieve: 20 August 2025
 
-## 3. d
+3. 
    
