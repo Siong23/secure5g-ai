@@ -2,7 +2,7 @@
 
 # 🔐 secure5g-ai
 
-An open-source project for generating realistic, labeled 5G network traffic datasets using MMU’s 5G testbed infrastructure. The goal is to support the research and development of AI/ML-based security mechanisms in next-generation mobile networks.
+An open-source project for generating realistic, labeled 5G network traffic datasets using a live 5G testbed infrastructure. The goal is to support the research and development of AI/ML-based security mechanisms in next-generation mobile networks.
 
 ---
 
@@ -11,7 +11,7 @@ An open-source project for generating realistic, labeled 5G network traffic data
 As 5G technology rapidly evolves, its complex architecture and increased attack surface demand smarter, AI-driven security solutions. However, the effectiveness of such solutions heavily depends on the availability of realistic, high-quality datasets.
 
 **secure5g-ai** addresses this gap by:
-- Leveraging MMU’s 5G testbed to simulate and capture real 5G traffic under benign and malicious conditions.
+- Leveraging live 5G testbed to simulate and capture real 5G traffic under benign and malicious conditions.
 - Generating, labeling, and curating a publicly reusable 5G security dataset.
 - Laying the foundation for future ML/DL-based intrusion detection research.
 
@@ -19,7 +19,7 @@ As 5G technology rapidly evolves, its complex architecture and increased attack 
 
 ## 🎯 Key Objectives
 
-- 📶 **Testbed-Driven Dataset Collection**: Use MMU’s live 5G setup to capture real traffic scenarios (control/user planes).
+- 📶 **Testbed-Driven Dataset Collection**: Use a live 5G setup to capture real traffic scenarios (control/user planes).
 - 🐍 **Attack Simulation**: Generate labeled traffic by replaying or scripting common 5G-related threats.
 - 🗃️ **Dataset Curation**: Format and annotate the data for ML research (CSV, PCAP, NetFlow, etc.).
 - 📊 **Preliminary Analysis**: Provide baseline statistics and visualizations for researchers.
@@ -29,7 +29,7 @@ As 5G technology rapidly evolves, its complex architecture and increased attack 
 ## 🖼️ System Architecture
 ```
           +-------------------------------------+
-          | MMU 5G Testbed                      |
+          | 5G Testbed                      |
           | - gNB + Core                        |
           | - 5G UEs (phones, emulators, SDRs)  |
           +-------------------------------------+
@@ -52,42 +52,6 @@ As 5G technology rapidly evolves, its complex architecture and increased attack 
              | - Metadata (labels, scenario) |
              | - Format: CSV, NetFlow, JSON  |
              +-------------------------------+
-```
-
-
----
-
-## 📂 Project Structure
-```
-secure5g-ai/
-├── capture/ # Scripts to capture traffic from 5G testbed
-├── attacks/ # Simulated attack scenarios (DoS, fuzzing, etc.)
-├── preprocess/ # Data cleaning and transformation
-├── dataset/ # Final dataset files
-├── notebooks/ # Exploratory data analysis (EDA)
-├── docs/ # Documentation, schema, and usage
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-```
-
-
----
-
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- Access to 5G testbed 
-- Python ≥ 3.8
-- Wireshark / tshark / tcpdump
-- [Zeek](https://zeek.org/) or [nfdump](https://github.com/phaag/nfdump) (optional)
-
-### Installation
-
-```bash
-git clone https://github.com/<your-org>/secure5g-ai.git
-cd secure5g-ai
-pip install -r requirements.txt
 ```
 
 ## Example Workflow
