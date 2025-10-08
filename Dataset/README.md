@@ -4,6 +4,14 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 
 ---
 
+---
+
+## 🌐 Step 1: Capture Raw Traffic
+
+Collect raw packet captures from your 5G test lab using Wireshark or tcpdump.
+
+Store them in:
+
 ### 💡 Dataset
 
 | Element | Markdown Feature Used | Example |
