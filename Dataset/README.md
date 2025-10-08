@@ -14,6 +14,6 @@ Store them in:
 
 Open TraceWrangler → Load your `.pcapng` file → Apply **Remove GTP-U** protocol fixup → Save as a new `.pcap`.
 
-![TraceWrangler Remove GTP](images/tracewrangler_remove_gtp.png)
+![TraceWrangler Remove GTP](images/tracewrangler.png)
 
 
