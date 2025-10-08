@@ -1,4 +1,7 @@
 # 5G Network Anomaly Dataset Processing Step
+
+This README.md will show how to convert raw packet captures (pcapng) into machine learning–ready datasets(.csv).
+
 ---
 
 ### 💡 Dataset
