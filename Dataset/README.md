@@ -3,9 +3,6 @@
 This README.md will show how to convert raw packet captures (pcapng) into machine learning–ready datasets(.csv).
 
 ---
-
----
-
 ## 🌐 Step 1: Capture Raw Traffic
 
 Collect raw packet captures from your 5G test lab using Wireshark or tcpdump.
