@@ -1,4 +1,4 @@
-# My 5G Network Anomaly Dataset Processing Steps
+# 5G Network Anomaly Dataset Processing Steps
 
 This README.md will show how to convert raw packet captures (pcapng) into machine learning–ready datasets(.csv).
 
@@ -8,7 +8,7 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 
 Collect raw data from real 5G testlab using Wireshark
 
-<br>Here is my packet capture (pcapng) files link:
+<br>Here is the packet capture (pcapng) files link:
 ```bash
 https://mmuedumy-my.sharepoint.com/my?id=%2Fpersonal%2F1211110323%5Fstudent%5Fmmu%5Fedu%5Fmy%2FDocuments%2FPCAP&viewid=e3af6dff%2D37bb%2D422e%2Da01f%2D80d90eebd189&ga=1)
 ```
