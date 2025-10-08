@@ -12,8 +12,20 @@ Store them in:
 
 ## 🧰 Step 2: Remove GTP Layer (TraceWrangler)
 
-Open TraceWrangler → Load your `.pcapng` file → Apply **Remove GTP-U** protocol fixup → Save as a new `.pcap`.
+Open TraceWrangler → Load your `.pcapng` file → Apply **Remove GTP-U headers** in `Edit Files` task → Run the task
 
 ![TraceWrangler Remove GTP](images/tracewrangler.png)
+
+![TraceWrangler Remove GTP](images/tracewrangler_2.png)
+
+
+Before removing GTP:
+
+![TraceWrangler Remove GTP](images/before_gtp.png)
+
+After removing GTP:
+
+![After Removing GTP](images/after_gtp.png)
+
 
 
