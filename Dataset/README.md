@@ -6,8 +6,16 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 
 ## 📋 Table of Contents
 
--   [Capture Raw Traffic](#-capture-raw-traffic)
 -   [Overview](#-overview)
+-   [Dataset Description](#-dataset-description)
+-   [Data Generation Pipeline](#-data-generation-pipeline)
+-   [Capture Raw Traffic](#-capture-raw-traffic)
+-   [Remove ](#-overview)
+
+---
+
+## 📝 Overview
+
 
 ## 🌐 Capture Raw Traffic
 
@@ -19,7 +27,7 @@ https://mmuedumy-my.sharepoint.com/my?id=%2Fpersonal%2F1211110323%5Fstudent%5Fmm
 
 ---
 
-## <br>🧰 Step 2: Remove GTP Layer (TraceWrangler)
+## <br>🧰 Remove GTP Layer (TraceWrangler)
 
 Open TraceWrangler → Load your `.pcap/.pcapng` file → Apply **Remove GTP-U headers** in `Edit Files` task → Run the task
 
