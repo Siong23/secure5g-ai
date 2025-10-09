@@ -4,11 +4,15 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 
 ---
 
+## 📋 Table of Contents
+
+-   [Capture Raw Traffic](#-Capture_Raw_Traffic)
+-   [Overview](#-overview)
+
 ## 🌐 Step 1: Capture Raw Traffic
 
-Collect raw data from real 5G testlab using Wireshark
+Perform attacks and collect raw data from real 5G testlab using Wireshark. Here is the packet capture (pcapng) files link:
 
-<br>Here is the packet capture (pcapng) files link:
 ```bash
 https://mmuedumy-my.sharepoint.com/my?id=%2Fpersonal%2F1211110323%5Fstudent%5Fmmu%5Fedu%5Fmy%2FDocuments%2FPCAP&viewid=e3af6dff%2D37bb%2D422e%2Da01f%2D80d90eebd189&ga=1)
 ```
@@ -17,7 +21,7 @@ https://mmuedumy-my.sharepoint.com/my?id=%2Fpersonal%2F1211110323%5Fstudent%5Fmm
 
 ## <br>🧰 Step 2: Remove GTP Layer (TraceWrangler)
 
-Open TraceWrangler → Load your `.pcapng` file → Apply **Remove GTP-U headers** in `Edit Files` task → Run the task
+Open TraceWrangler → Load your `.pcap/.pcapng` file → Apply **Remove GTP-U headers** in `Edit Files` task → Run the task
 
 ![TraceWrangler Remove GTP](images/tracewrangler.png)
 
@@ -27,13 +31,13 @@ Open TraceWrangler → Load your `.pcapng` file → Apply **Remove GTP-U headers
 
 ![TraceWrangler Remove GTP](images/before_gtp.png)
 
-<br>After removing GTP:
+After removing GTP:
 
 ![After Removing GTP](images/after_gtp.png)
 
 ---
 
-## <br>📊 Step 3: Convert Decapsulated PCAPNG to Network Flow (Argus)
+## <br>📊 Step 3: Convert Decapsulated Packet Capture to Network Flow (Argus)
 
 After removing the GTP layer, the resulting file becomes a **decapsulated pcapng**, where each packet now contains the real IP/TCP/UDP headers of user-plane traffic.  
 
