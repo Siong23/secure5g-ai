@@ -6,7 +6,7 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 
 ## 📋 Table of Contents
 
--   [Capture Raw Traffic](#-Capture_Raw_Traffic)
+-   [Capture Raw Traffic](#-capture-raw-traffic)
 -   [Overview](#-overview)
 
 ## 🌐 Capture Raw Traffic
