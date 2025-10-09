@@ -2,21 +2,25 @@
 
 This README.md contains dataset of network traffic from a real 5G test lab environment, designed for developing and testing anomaly and intrusion detection systems. The dataset includes both `benign` traffic and `malicious` traffic from **flooding** , **fuzzing** and **Denial-of-service (DoS)** attacks.
 
+ℹ️ **Reference:**
+
+This dataset is developed with reference to the **5G-NIDD Dataset**, using similar data collection and preprocessing methodologies to ensure consistency and reliability.
+
 ---
 
 ## <br>📋 Table of Contents
 
 -   [📝Overview](#-overview)
 -   [📊Dataset Description](#-dataset-description)
--   [🧪 Data Generation Pipeline](#-data-generation-pipeline)
+-   [🧪Data Generation Pipeline](#-data-generation-pipeline)
     - [Step 1: Raw Data Capture](#step-1-raw-data-capture)
     - [Step 2: GTP Layer Removal with TraceWrangler](#step-2-gtp-layer-removal-with-tracewrangler)
     - [Step 3: Network Flow Generation with Argus](#step-3-network-flow-generation-with-argus)
     - [Step 4: Feature Extraction with Argus](#step-4-feature-extraction-with-argus)
     - [Step 5: Feature Computation and Labeling with Jupyter Notebook](#step-5-feature-computation-and-labeling-with-jupyter-notebook)
+      - [🧩Install Anaconda](#-install-anaconda)
 -   [📈Feature set](#-feature-set)
 -   [📁Repository Structure](#-repository-structure)
-
 
 ---
 
