@@ -9,7 +9,7 @@ This README.md will show how to convert raw packet captures (pcapng) into machin
 -   [Capture Raw Traffic](#-Capture_Raw_Traffic)
 -   [Overview](#-overview)
 
-## 🌐 Step 1: Capture Raw Traffic
+## 🌐 Capture Raw Traffic
 
 Perform attacks and collect raw data from real 5G testlab using Wireshark. Here is the packet capture (pcapng) files link:
 
