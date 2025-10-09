@@ -9,7 +9,12 @@ This README.md contains dataset of network traffic from a real 5G test lab envir
 -   [Overview](#-overview)
 -   [Dataset Description](#-dataset-description)
 -   [Data Generation Pipeline](#-data-generation-pipeline)
--   [Step 1: Raw data capture]
+    - [Step 1: Raw data capture](#step-1:-raw-data-capture)
+    - [Step 2: Remove GTP Layer (TraceWrangler)](#step-2-remove-gtp-layer-tracewrangler)
+    - [Step 3: Convert to Network Flow (.argus)](#step-3-convert-to-network-flow-argus)
+    - [Step 4: Extract Features (Argus)](#step-4-extract-features-argus)
+    - [Step 5: Compute Derived Features (Jupyter Notebook)](#step-5-compute-derived-features-jupyter-notebook)
+-   [Step 1: ](##step-1:-raw-data-capture)
 -   [Step 2: GTP Layer Removal with Tracewrangler]
 -   [Step 3: 3: Network Flow Generation with Argus]
 -   [Step 4: Feature Extraction with Argus]
