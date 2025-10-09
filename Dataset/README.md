@@ -14,8 +14,9 @@ This README.md contains dataset of network traffic from a real 5G test lab envir
     - [Step 3: Network Flow Generation with Argus](#step-3-network-flow-generation-with-argus)
     - [Step 4: Feature Extraction with Argus](#step-4-feature-extraction-with-argus)
     - [Step 5: Feature Computation and Labeling with Jupyter Notebook](#step-5-feature-computation-and-labeling-with-jupyter-notebook)
+-   [📈Feature set](#-feature-set)
+-   [📁Repository Structure](#-repository-structure)
 
--   [📈Feature set ](#-feature-set)
 
 ---
 
@@ -27,7 +28,7 @@ The security of 5G networks is critical, yet there is a scarcity of public datas
 
 ## <br>📊 Dataset Description
 
-The final dataset is available in the `/dataset` directory as `5G_anomaly_dataset.csv`. It contains network flow records, where each row represents a unidirectional or bidirectional flow of packets between a source and a destination. Each flow is described by a set of features and is labeled as either **Benign** or **Malicious**.
+The final dataset is in the `/dataset` directory as `5G_Anomaly_Dataset.csv`. It contains network flow records, where each row represents a unidirectional or bidirectional flow of packets between a source and a destination. Each flow is described by a set of features and is labeled as either **Benign** or **Malicious**.
 
 | Category    | Description                                      |
 | :---------- | :----------------------------------------------- |
@@ -241,7 +242,7 @@ df = pd.concat([df1, df2, df3, df4, df5], ignore_index=True)
 
 ```bash
 # Save as a single dataset
-df.to_csv("5G_anomaly_dataset.csv", index=False)
+df.to_csv("5G_Anomaly_Dataset.csv", index=False)
 ```
 
 ## 📈 Feature Set
@@ -310,6 +311,45 @@ These features collectively describe network traffic characteristics for both no
 
 ---
 
+## 📁 Repository Structure
+
+```
+📁 secure5g-ai/5G Network Anomaly Dataset for Intrusion Detection/
+│
+├── 📄 README.md                         # Full documentation (the one we’re are now)
+│
+├── 📁 datasets/
+│   ├── 📁 raw_argus/                    # Features extracted directly from Argus (step 4)
+│   │   ├── benign_flow.csv
+│   │   ├── icmpflood_flow.csv
+│   │   ├── synflood_flow.csv
+│   │   ├── udpflood_flow.csv
+│   │   ├── httpflood_flow.csv
+│   │   ├── slowratedos_flow.csv
+│   │   └── fuzzing_flow.csv
+│   │
+│   ├── 📁 computed_features/            # Features computed using Jupyter Notebook (step 5)
+│   │   ├── benign_computed.csv
+│   │   ├── icmpflood_computed.csv
+│   │   ├── synflood_computed.csv
+│   │   ├── udpflood_computed.csv
+│   │   ├── httpflood_computed.csv
+│   │   ├── slowratedos_computed.csv
+│   │   └── fuzzing_computed.csv
+│   │
+│   └── 5G_Anomaly_Dataset.csv          # The final merged dataset (for ML training)
+│
+├── 📁 notebooks/
+│   ├── feature_computation.ipynb        # Jupyter Notebook used for feature computation
+│   └── dataset_merging.ipynb            # Optional: notebook showing dataset merging
+│
+└── 📁 images/
+    ├── step1_capture.png
+    ├── step2_tracewrangler.png
+    ├── step3_argus.png
+    ├── step4_features.png
+    └── step5_computation.png                       
+```
 
 
 
