@@ -21,7 +21,6 @@ This dataset is developed with reference to the **5G-NIDD Dataset**, using simil
       - [🧩Install Anaconda](#-install-anaconda)
       - [📘Feature Computation Process](#-feature-computation-process)
 -   [📈Feature Set Overview](#-feature-set-overview)
--   [📁Repository Structure](#-repository-structure)
 
 ---
 
